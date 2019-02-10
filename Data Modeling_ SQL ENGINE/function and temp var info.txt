@@ -1,0 +1,26 @@
+Insert: line 2433
+temp6: list of temp columns
+temp2
+
+Drop db: line 2279
+
+Create table: line 2410
+temp1
+temp2
+temp3
+temp4
+temp5
+
+update: line 2493
+temp13: stores temp values for semantic checking
+temp12: temp list of columns
+
+where: line 2612
+temp1
+temp2
+temp6
+temp7: list of relational operators line 972
+temp11: stores semantic operations line 954
+
+save: line 2300
+where file is created

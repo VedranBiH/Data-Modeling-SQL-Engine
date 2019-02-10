@@ -1,0 +1,20 @@
+/***** For wselect ******/
+// Construct the tuples
+// After constructing the tuples, pass them to the print function
+
+// Hold the values of the tuples
+// This is declared outside of the for loops
+ArrayList<String> values = new ArrayList<String>();
+  
+  // split additionalValues into two parts: value and date
+  ArrayList<String> myList = new ArrayList<String>(Arrays.asList(additionalValues.get(x).split(" ")));
+  values.add(myList.get(0)); // add the value
+  
+  // if we're on the last column, add the date
+  int last = colName.size() - 1; 
+  if(w == last) {
+    values.add(myList.get(0));  // add the last value 
+    values.add(myList.get(1));  // add the date
+    tuples.add(values);         // add the values and date as a tuple
+    values.clear();             // empty the list of values
+  }

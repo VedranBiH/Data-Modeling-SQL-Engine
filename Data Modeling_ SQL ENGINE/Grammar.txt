@@ -1,0 +1,98 @@
+//Terminal Variables
+a = LIST TABLES
+b = CREATE
+c = DROP
+d = LOAD
+e = SAVE
+f = COMMIT
+g = INSERT
+h = DELETE
+i = UPDATE/WUPDATE
+j = SELECT/WSELECT
+k = DATABASE
+l = TABLE
+m = INTO
+n = VALUES
+o = FROM
+p = WHERE
+q = SET
+r = attribute				//as in any name(id)
+s = NOT
+t = NULL
+u = number				//as in any number(34)
+v = VARCHAR
+w = INT
+x = NUMBER
+y = CHAR
+z = BIT
+? = AND
++ = OR
+
+//Non-Terminal Variables
+A = start state
+B = create
+C = drop
+D = load
+E = save
+F = commit
+G = insert
+H = delete
+I = update
+J = select
+K = database
+L = table
+M = field_def_1
+N = field_def_2
+O = field_name_1
+P = field_name_2
+Q = literal_1
+R = literal_2
+S = where
+T = update_set_1
+U = update_set_2
+V = column_1
+W = column_2
+X = field_type
+Y = condition_1
+Z = condition_2
+~ = relational_operator
+
+//Grammar
+A -> a | bB | cC | dD | eE | fF | gG | hH | iI | jJ 
+B -> kK | lL(M)
+C -> kK | lL
+D -> kK
+E -> @
+F -> @
+G -> mL(OP)n(QR) | mLn(QR)
+H -> oLpS | oL
+I -> LqTUpS | LqTU
+J -> *oLpS | VWoLpS | *oL | VWoL
+K -> r
+L -> r
+M -> OXstN | OXN
+N -> ,M | @
+O -> V
+P -> ,OP | @
+Q -> t | u | v
+R -> ,QR | @
+S -> YZ;
+T -> r=Q
+U -> ,TU | @
+V -> r
+W -> ,VW | @
+X -> w | w(u) | x | x(u) | x(u,u) | y | y(u) | v | v(u) | z
+Y -> V~Q
+Z -> ?YZ | +YZ | @
+~ -> = | < | <= | > | >= | != | <>
+
+
+
+
+
+
+
+
+
+
+

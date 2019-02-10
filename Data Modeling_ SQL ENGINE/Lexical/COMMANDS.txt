@@ -1,0 +1,77 @@
+SELECT * FROM A WHERE B = 'C';
+Token Made: SELECT
+Token Made: *
+Token Made: FROM
+Token Made: A
+Token Made: WHERE
+Token Made: B
+Token Made: =
+Token Made: '
+Token Made: C
+Token Made: '
+Token Made: ;
+
+SELECT A FROM B GROUP BY GROUPING SETS ((G));
+Token Made: SELECT
+Token Made: A
+Token Made: FROM
+Token Made: B
+Token Made: GROUP
+Token Made: BY
+Token Made: GROUPING
+Token Made: SETS
+Token Made: (
+Token Made: (
+Token Made: G
+Token Made: )
+Token Made: )
+Token Made: ;
+
+WUPDATE A SET (01/01/1993) : 12:30 B = 5 WHERE D = 'TEST';
+Token Made: WUPDATE
+Token Made: A
+Token Made: SET
+Token Made: (
+Token Made: 01
+Token Made: /
+Token Made: 01
+Token Made: /
+Token Made: 1993
+Token Made: )
+Token Made: :
+Token Made: 12
+Token Made: :
+Token Made: 30
+Token Made: B
+Token Made: =
+Token Made: 5
+Token Made: WHERE
+Token Made: D
+Token Made: =
+Token Made: '
+Token Made: TEST
+Token Made: '
+Token Made: ;
+
+SELECT A, SUM(B) FROM C GROUP BY D HAVING MIN(E) <= 47;
+Token Made: SELECT
+Token Made: A
+Token Made: ,
+Token Made: SUM
+Token Made: (
+Token Made: B
+Token Made: )
+Token Made: FROM
+Token Made: C
+Token Made: GROUP
+Token Made: BY
+Token Made: D
+Token Made: HAVING
+Token Made: MIN
+Token Made: (
+Token Made: E
+Token Made: )
+Token Made: <
+Token Made: =
+Token Made: 47
+Token Made: ;

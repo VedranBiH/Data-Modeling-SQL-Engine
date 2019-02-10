@@ -1,0 +1,9 @@
+CREATE DATABASE test;
+CREATE TABLE testTable(A int [NOT NULL], B character(5));
+INSERT INTO testTable(A, B) VALUES (1, word);
+INSERT INTO testTable(A, B) VALUES (3, wow);
+INSERT INTO testTable(A, B) VALUES (4, science);
+CREATE TABLE testTableTwo(A int [NOT NULL], B character(5));
+INSERT INTO testTableTwo(A, B) VALUES (2, what);
+SELECT A, B AS C FROM testTable GROUP BY GROUPING SETS ((A), (B));
+SELECT A, B FROM testTable, testTableTwo GROUP BY A HAVING COUNT(A) = 1;

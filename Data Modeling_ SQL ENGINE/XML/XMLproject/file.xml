@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table name="Test Table">
+    <Record>
+        <Cell colName="A">
+            <additionalValue>Extra value</additionalValue>
+            <additionalValue>Second extra value</additionalValue>
+            <origValue>Hello</origValue>
+            <type>VARCHAR</type>
+        </Cell>
+    </Record>
+</table>

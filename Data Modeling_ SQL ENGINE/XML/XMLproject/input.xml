@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<table name = "testTable">
+    <record>
+        <cell colName = "A">
+        <origValue>5</origValue>
+        <additionalValue>10</addValue>
+        <type>int</type>
+        </cell>
+        
+        <cell colName = "B">
+        <origValue>20></origValue>
+        <additionalValue></addValue>
+        <type>int</type>
+        </cell>
+        
+        <cell colName = "A">
+        <origValue>5000 04/09/2016:T21:00</origValue>
+        <addValue></addValue>
+        <type>int</type>
+        </cell>
+	</record>
+	
+	
+
+</table>
